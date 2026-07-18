@@ -97,7 +97,7 @@ leetcode-solutions/
 | Queues | ⏳ |
 | Trees | ⏳ |
 | Graphs | ⏳ |
-| Binary Search | ⏳ |
+| Binary Search | 1 |
 | Dynamic Programming | ⏳ |
 | Greedy | ⏳ |
 | Others | ⏳ |
