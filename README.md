@@ -89,7 +89,7 @@ leetcode-solutions/
 
 | Topic | Solved |
 |--------|:------:|
-| Arrays | 6 |
+| Arrays | 8 |
 | Strings | ⏳ |
 | Hash Tables | ⏳ |
 | Linked Lists | ⏳ |
