@@ -90,7 +90,7 @@ leetcode-solutions/
 | Topic | Solved |
 |--------|:------:|
 | Arrays | 33 |
-| Strings | ⏳ |
+| Strings | 2 |
 | Hash Tables | ⏳ |
 | Linked Lists | ⏳ |
 | Stacks | ⏳ |
