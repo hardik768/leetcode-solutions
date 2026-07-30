@@ -4,6 +4,11 @@ Difficulty: Easy
 
 Time Complexity: O(log n)
 Space Complexity: O(1)
+
+Approach:
+1) start from the middle value instead of using transversal method
+2) compare middle value whether it is large or smaller than the target element 
+3) it always works in sorted array only 
 */
 # Code
 ```cpp []
