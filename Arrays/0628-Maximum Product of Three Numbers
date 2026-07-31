@@ -4,6 +4,11 @@ Difficulty: Easy
 
 Time Complexity: O(n logn)
 Space Complexity: O(1)
+
+Approach: 
+1) arrange the array in ascending order
+2) return the max of starting from last and 
+3) last to first-two cause integer can be negative
 */
 code:
 class Solution {
