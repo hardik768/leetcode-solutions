@@ -4,6 +4,10 @@ Difficulty: Easy
 
 Time Complexity: O(n)
 Space Complexity: O(n)
+
+Approach:
+1) make a vector array then by using transverse method,
+2) add the sum each time by sum variable to add the value in it 
 */
 #code
 class Solution {
