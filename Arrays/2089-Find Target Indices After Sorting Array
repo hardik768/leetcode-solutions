@@ -4,6 +4,10 @@ Difficulty: Easy
 
 Time Complexity: O(n logn)
 Space Complexity: O(n)
+
+Approach:
+1) just sort an array using sort function
+2) use tranverse to check the element is prsent or not
 */
 class Solution {
 public:
