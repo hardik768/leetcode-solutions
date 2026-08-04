@@ -1,0 +1,37 @@
+/*
+Problem: 3731. Find Missing Elements
+Difficulty: Easy
+
+Time Complexity: O(n logn)
+Space Complexity: O(1)
+
+Approach: 
+1) Sort the input array in ascending order.
+2) Store the smallest (min) and largest (max) elements.
+3) Initialize an empty vector ans to store the missing elements.
+4) Use two pointers:
+  i traverses every integer from min to max.
+  j traverses the sorted array nums.
+5) If nums[j] is equal to i, the number exists in the array, so increment j.
+Otherwise, i is missing, so add it to ans.
+*/
+class Solution {
+public:
+    vector<int> findMissingElements(vector<int>& nums) {
+
+        sort(nums.begin(), nums.end());
+        int min = nums[0];
+        int max = nums[nums.size()-1];
+        vector<int> ans;
+
+        for (int i = min, j = 0; i <= max; i++) {
+            if (nums[j] != i) {
+                ans.push_back(i);
+            }
+            else {
+                j++;
+            }
+        }
+        return ans;
+    }
+};
