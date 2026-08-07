@@ -1,0 +1,25 @@
+/*
+Problem: 3285. Find Indices of Stable Mountains
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Approach:
+1) read teh question carefully cause in that,
+2) it written "A mountain is called stable if the mountain just before it (if it exists) has a height strictly greater than threshold. Note that mountain 0 is not stable".
+3) which means height[i-1]>threshold , i is not equal to zero hence start the loop with 1 and using put the index of an array into new array 
+*/
+class Solution {
+public:
+    vector<int> stableMountains(vector<int>& height, int threshold) {
+        vector<int> arr;
+        int n=height.size();
+        for(int i=1;i<n;i++){
+            if(height[i-1]>threshold){
+                arr.push_back(i);
+            }
+        }
+        return arr;
+    }
+};  
