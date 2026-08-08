@@ -1,0 +1,23 @@
+/*
+Problem: 344. Reverse String
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Approach:
+Reverse an array in-place using two pointers moving from one ends to required index(k).
+*/
+class Solution {
+public:
+    string reversePrefix(string s, int k) {
+        int left=0;
+        int right=k-1;
+        while(left<=right){
+            swap(s[left],s[right]);
+            left++;
+            right--;
+        }
+        return s;
+    }
+};
