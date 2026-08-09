@@ -1,0 +1,23 @@
+/*
+Problem: 1732. Find the Highest Altitude
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+
+Approach:
+*/
+class Solution {
+public:
+    int largestAltitude(vector<int>& gain) {
+        vector<int> altitude;
+        altitude.push_back(0);
+        int sum=0;
+        for(int i=0;i<gain.size();i++){
+            sum+=gain[i];
+            altitude.push_back(sum);
+        }
+        int highest=*max_element(altitude.begin(),altitude.end());
+        return highest;
+    }
+};
