@@ -1,0 +1,25 @@
+/*
+Problem: 2108. Find First Palindromic String in the Array
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Approach:
+
+*/
+class Solution {
+public:
+    string firstPalindrome(vector<string>& words) {
+        string word="";
+        for(string i: words){
+            string original = i;
+            reverse(i.begin(), i.end());
+            if(i==original){
+                word+=i;
+                return word;
+            }
+        }
+        return word;
+    }
+};
