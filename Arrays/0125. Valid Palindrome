@@ -1,0 +1,28 @@
+/*
+Problem: 125. Valid Palindrome
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+class Solution {
+public:
+    bool isPalindrome(string s) {
+        string clear = "";
+        for (char c : s) {
+            if (isalnum(c)) {
+                clear += tolower(c); 
+            }
+        }
+        int left = 0;
+        int right = clear.size() - 1; 
+        while (left < right) { 
+            if (clear[left] != clear[right]) {
+                return false;
+            }
+            left++;
+            right--;
+        }
+        return true;
+    }
+};
