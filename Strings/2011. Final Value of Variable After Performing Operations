@@ -1,0 +1,25 @@
+/*
+Problem: 2011. Final Value of Variable After Performing Operations
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+
+Approach:
+1) use the variable op for increment and decrement as per the input.
+*/
+class Solution {
+public:
+    int finalValueAfterOperations(vector<string>& operations) {
+        int op=0;
+        for(int i=0;i<operations.size();i++){
+        if(operations[i]=="--X" || operations[i]=="X--"){
+            op--;
+        }
+        else {
+            op++;
+        }
+        }
+        return op;
+    }
+};
