@@ -1,0 +1,28 @@
+/*
+Problem: 3894. Traffic Signal Color
+Difficulty: Easy
+
+Time Complexity: O(1)
+Space Complexity: O(1)
+
+Approach:
+1) its quite easy just simulation using if else\
+2) based on the given conditions 
+*/
+class Solution {
+public:
+    string trafficSignal(int timer) {
+        if(timer==0){
+            return "Green";
+        }
+        else if(timer==30){
+            return "Orange";
+        }
+        else if (30<timer && timer<=90){
+            return "Red";
+        }
+        else{
+            return "Invalid";
+        }
+    }
+};
