@@ -1,0 +1,30 @@
+/*
+Problem: 2161. Partition Array According to Given Pivot
+Difficulty: Medium
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+class Solution {
+public:
+    vector<int> pivotArray(vector<int>& nums, int pivot) {
+        vector<int> result;
+        for(int i:nums){
+            if(i<pivot){
+                result.push_back(i);
+            }
+        }
+        for(int i:nums){
+            if(i==pivot){
+                result.push_back(i);
+            }
+        }
+        for(int i:nums){
+            if(i>pivot){
+                result.push_back(i);
+            }
+        }
+        
+        return result;
+    }
+};
