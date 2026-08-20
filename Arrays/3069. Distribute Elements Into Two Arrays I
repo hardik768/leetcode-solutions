@@ -1,0 +1,28 @@
+/*
+Problem: 3069. Distribute Elements Into Two Arrays I
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(n)
+*/
+class Solution {
+public:
+    vector<int> resultArray(vector<int>& nums) {
+        vector<int> merged;
+        vector<int>arr1;
+        arr1.push_back(nums[0]);
+        vector<int>arr2;
+        arr2.push_back(nums[1]);
+        for(int i=2;i<nums.size();i++){
+            if(arr1.back()>arr2.back()){
+            arr1.push_back(nums[i]);
+            }
+            else{
+            arr2.push_back(nums[i]);
+            }
+        }
+        merged.insert(merged.end(), arr1.begin(), arr1.end());
+        merged.insert(merged.end(), arr2.begin(), arr2.end());
+        return merged;
+    }
+};
