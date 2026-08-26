@@ -1,0 +1,27 @@
+/*
+Problem: 0392 Is Subsequence
+Difficulty: Easy
+
+Time Complexity: O(n)
+Space Complexity: O(1)
+*/
+class Solution {
+public:
+    bool isSubsequence(string s, string t) {
+        string copy="";
+        int left=0;
+        int right=0;
+        while(right<t.size()){
+            if(s[left]==t[right]){
+                copy+=t[right];
+                left++;
+                right++;
+
+            }
+            else{
+                right++;
+            }
+        }
+        return copy==s;
+    }
+};
